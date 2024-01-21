@@ -1,0 +1,6 @@
+Firestore.instance.collection("books")
+     .doc(doc.documentID) // Replace the document.documentID with the row id that you need to delete
+     .delete()
+     .catchError((e){
+   print(e);
+ });

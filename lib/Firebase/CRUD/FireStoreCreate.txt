@@ -1,0 +1,7 @@
+Map<String, dynamic> newBook = new Map<String,dynamic>();
+newBook["title"] = "title value";
+newBook["author"] = "author value";
+
+Firestore.instance.collection("books").add(newBook).whenComplete((){
+        // You can add your desire action after the row is added
+} );

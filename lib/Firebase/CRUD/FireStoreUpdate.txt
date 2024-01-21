@@ -1,0 +1,11 @@
+Map<String, dynamic> updateBook = new Map<String,dynamic>();
+ updateBook["title"] = "title value";
+ updateBook["author"] = "author value";
+ // Updae Firestore record information regular way
+Firestore.instance
+    .collection("books")
+    .docs(docs.documentID)
+    .updateData(updateBook)
+    .whenComplete((){
+         // You can add your desire action after the row is updated
+});
