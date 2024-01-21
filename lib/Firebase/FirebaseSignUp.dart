@@ -9,7 +9,7 @@ class FirebaseSignUp extends StatelessWidget {
   TextEditingController passController = TextEditingController();
   signUp(){
     if(formKey.currentState!.validate()){
-      FirebaseAuth.instance.createuserwithemailandpassword(email: emailController.text.toString(), password: passController.text.toString()).then((value){
+      FirebaseAuth.instance.createUserWithEmailAndPassword(email: emailController.text.toString(), password: passController.text.toString()).then((value){
         // Navigator.popAndPushNamed(context, "firebase-landing-page")
         print("Sign Up Form Submited");
       });
