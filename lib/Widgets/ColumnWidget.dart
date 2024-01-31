@@ -8,6 +8,7 @@ class ColumnWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var h = MediaQuery.of(context).size.height;
     var w = MediaQuery.of(context).size.width;
+    
     return Scaffold(
       appBar: AppBar(
         title: Text("Column Widget"),
