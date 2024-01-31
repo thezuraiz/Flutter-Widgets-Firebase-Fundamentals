@@ -6,11 +6,15 @@ class ColumnWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var h = MediaQuery.of(context).size.height;
+    var w = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         title: Text("Column Widget"),
       ),
       body: Container(
+        height: h;
+        width: w;
         child: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.max,
