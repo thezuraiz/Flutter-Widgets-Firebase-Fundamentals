@@ -4,14 +4,15 @@ import 'package:google_fonts/google_fonts.dart';
 class MyTheme{
   static ThemeData lightTheme(BuildContext context) => ThemeData(
       primarySwatch: Colors.deepPurple,
+      brightness: Brightness.light,
       fontFamily: GoogleFonts.poppins().fontFamily,
       // fontFamily: GoogleFonts.lato().fontFamily,
       appBarTheme: AppBarTheme(
         elevation: 0.5,
-        color: Colors.white,
-        iconTheme: IconThemeData(color: Colors.black),
+        color: Colors.deepPurple,
+        iconTheme: IconThemeData(color: Colors.white),
         titleTextStyle: TextStyle(
-          color: Colors.black
+          color: Colors.white
         )
       ),
   );
